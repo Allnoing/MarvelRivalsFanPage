@@ -1,0 +1,71 @@
+/* navbar styling */
+.navbar { /* Keeps the navbar visible when scrolling */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar, footer {
+    background-color: #d32f2f !important; /* Red color from old blue */
+}
+
+/* card styles */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle box shadows & Borders for depth */
+    border-radius: 8px;
+}
+
+/* Hover effect for cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* footer animation */
+footer {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.ratio:hover .hover-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/*body styles*/
+/* Dark mode */
+body {
+    background-color: #121212 !important;
+    color: white; /* White text */
+}
+
